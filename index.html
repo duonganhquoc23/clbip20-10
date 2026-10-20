@@ -510,9 +510,8 @@
 </head>
 <body>
 
-    <!-- Âm thanh nền (Piano lãng mạn) -->
-    <!-- Link nhúng trực tiếp nguồn nhạc miễn phí Pixabay -->
-    <audio id="bg-music" src="https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3?filename=romantic-piano-126296.mp3" loop preload="auto"></audio>
+    <!-- Âm thanh nền (Vườn hoa nhí) - Đã được cập nhật tên file -->
+    <audio id="bg-music" src="vuon-hoa-nhi.mp3" loop preload="auto"></audio>
 
     <!-- Nền Particles (Hoa đào, đom đóm) -->
     <div id="particles-container"></div>
@@ -598,7 +597,7 @@
             music.volume = 0.5;
             // Trình duyệt yêu cầu user tương tác mới được play audio
             music.play().catch(error => {
-                console.log("Audio autoplay was prevented:", error);
+                console.log("Không thể tự động phát nhạc, có thể do chưa tải file vuon-hoa-nhi.mp3 về cùng thư mục.", error);
             });
             
             switchScreen('input-screen');
